@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+      // 字面量语法创建对象 
+    const item={}
+    // 创建具有动态属性名称的对象时使用计算属性名称  因为可以在一处定义对象的所有属性 -->
+    function getkey(k){
+        return `${k}`
+    }
+    const obj={
+        id:1,
+        name:'suying',    
+    }
+ 
+    // 使用属性值简写  特点：更短且具有描述性 -->
+    const name='suying'
+    const obj={
+        name,
+
+    }
+
+    // 引用无效标识符的属性更容易阅读 -->
+</script>
+</body>
+</html>
