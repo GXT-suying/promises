@@ -9,9 +9,39 @@
 <body>
     <script>
         // 使用字面量语法创建数组
-        const items=[]
+        const items=[];
+
+        // 对象可以是一个变量，对象可以包含多个值，每个值以name:value形式出现
 
         //使用push而不是直接赋值向数组添加项
+        // 使用数组展开...复制数组
+        const someStack=[];
+        someStack.push('abcd');
+        const len=items.length
+        const someStack=[...items]
+        // // 将可迭代对象转换为数组，使用spreads...而不是Array.from
+        const foo=document.querySelectorAll('.foo');
+        const nodes=[...foo]
+
+        // 使用Array.from用于类似阵列的对象转换为一个数组
+        const arrLike={0:'foo',1:'bar'}
+        const arr=Array.from(arrLike)
+
+        //  使用Array.from 代替spread...来映射可迭代对象，因为避免了创建数组
+        const bb=Array.from(foo,bar)
+
+        // 数组有多行，则在打开数组括号后和关闭数组数组之前使用换行符
+        // 对象可以跨越多行，空格和换行不是必须的
+
+        var person={
+            first:"qq",
+            second:"ww",
+        }
+
+
+
+        
+        
         
 
     </script>
