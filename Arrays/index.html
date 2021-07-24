@@ -13,21 +13,23 @@
 
         // 对象可以是一个变量，对象可以包含多个值，每个值以name:value形式出现
 
-        //使用push而不是直接赋值向数组添加项
-        // 使用数组展开...复制数组
+        //（1）使用push而不是直接赋值向数组添加项
+        // （2）使用数组展开...复制数组
         const someStack=[];
         someStack.push('abcd');
+
         const len=items.length
         const someStack=[...items]
-        // // 将可迭代对象转换为数组，使用spreads...而不是Array.from
+
+         // （3）将可迭代对象转换为数组，使用spreads...而不是Array.from
         const foo=document.querySelectorAll('.foo');
         const nodes=[...foo]
 
-        // 使用Array.from用于类似阵列的对象转换为一个数组
+        // （4）使用Array.from用于类似阵列的对象转换为一个数组
         const arrLike={0:'foo',1:'bar'}
         const arr=Array.from(arrLike)
 
-        //  使用Array.from 代替spread...来映射可迭代对象，因为避免了创建数组
+        //  （5）使用Array.from 代替spread...来映射可迭代对象，因为避免了创建数组
         const bb=Array.from(foo,bar)
 
         // 数组有多行，则在打开数组括号后和关闭数组数组之前使用换行符
@@ -38,6 +40,22 @@
             second:"ww",
         }
 
+        // （6）数组中的元素组合字符串：join()
+        const arr=["a","b","c"];
+        arr.join(".");
+        console.log(arr)
+
+        // (7)删除并返回数组的最后一个元素pop()
+        const arr1=new Array(3)
+        arr1[0]="a"
+        arr1[1]="b"
+        arr1[1]="c"
+        document.wript(arr.pop())
+
+        //(8).slice()方法可以从已有的数组中返回选定的元素
+        
+        //.sort()方法用于对数组的元素进行排序，是按照字符编码进行排序
+        
 
 
         
